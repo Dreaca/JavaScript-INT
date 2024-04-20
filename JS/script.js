@@ -1,8 +1,16 @@
-console.log("Welcome to JavaScript World!!");
-
-//LINE comment
-
-/*
- Block comment
-
- */
+var marks = 60;
+if(marks>75){
+    console.log("A");
+}
+else if(marks>65){
+    console.log("B")
+}
+else if(marks>55){
+    console.log("C")
+}
+else if(marks>35){
+    console.log("S")
+}
+else{
+    console.log("F")
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text">
+<script>
+    document.getElementsByTagName("input")[0].addEventListener('input',function (event){
+        console.log(event.target.value);
+    })
+</script>
+</body>
+</html>

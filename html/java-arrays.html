@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+<body>
+        <script>
+            var numberArray = [10,20,60,80,21,75,80];
+
+            // const findOddNumbers = (array) =>{
+            //     var oddarray = [];
+            //     for (let i = 0; i < array.length; i++) {
+            //         if (array[i]%2===1) {
+            //             oddarray.push(array[i]);
+            //         }
+            //     }
+            //     return oddarray;
+            // }
+            // var oddNumberArray = findOddNumbers(numberArray);
+            // console.log(oddNumberArray);
+
+            function findmax(array){
+                let max = array[0];
+                // for (let i = 0; i < array.length; i++) {
+                //     if (max<array[i]){
+                //         max=array[i];
+                //     }
+                // }
+                let item;
+                index = array.length
+                array.map((item,index) => {
+                  if (max<item){
+                      max = item;
+                  }
+                })
+                return max;
+            }
+            var maxNum = findmax(numberArray);
+        </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<h1>Hello</h1>
+<script>
+    let param1 = 1;
+    let param2 = 4;
+    var myFunction = function (){
+        console.log("Welcome to myfunction");
+    }
+    myFunction();
+    var myFunction4 = function (param1,param2){
+        console.log("param1 + param2 ", param1,param2)
+    }
+    myFunction4(1,2);
+
+    const arrowfunction = () => {
+        console.log("Arrow Functions")
+    }
+    arrowfunction();
+    const arrowF2 = (param1, param2) => {
+        console.log(param1+param2)
+    }
+    arrowF2(2,4)
+
+    function callback(){
+        console.log("Callback Function")
+    }
+    function process(param){
+        param();
+    }
+    process(callback())
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var array = [1,2,3,"hello",true, function (){}];
+    console.log(array[5]);
+    var numArray = [25,38,15,20,100,99,250,60];
+    function maxNumber(array){
+        maxNum = 0;
+        for (let i = 0; i < numArray.length; i++) {
+            if (array[i]>maxNum){
+                maxNum = array[i];
+            }
+        }
+        return maxNum;
+    }
+    var max = maxNumber(numArray);
+    console.log(max)
+</script>
+</body>
+</html>

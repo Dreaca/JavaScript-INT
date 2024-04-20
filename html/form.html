@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello</h1>
+<input type="text">
+<br><br>
+<input type="number" name="nm1" id="num1">
+<br>
+<input type="number" name="num2" id="num2">
+<br>
+<button>Find Sum</button>
+<script>
+    let h1 = document.getElementsByTagName("h1")[0];
+        document.getElementsByTagName("input")[0].addEventListener('input',function (event){
+           string = event.target.value;
+            h1.innerHTML = string;
+        })
+    document.getElementsByTagName("button")[0].addEventListener('click',function (){
+        var val1 = +document.querySelectorAll("input")[1].value;
+        var val2 = +document.querySelectorAll("input")[2].value
+        console.log(+val1+val2);
+    })
+</script>
+</body>
+</html>
